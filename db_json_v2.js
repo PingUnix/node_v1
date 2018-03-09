@@ -24,6 +24,7 @@ var sql_insert = `insert into classroom (label, tags) values ('ep02','{"name":"`
 
 var sql_select = `select * from classroom where tags->"$.type"="media" and tags->"$.name"="class01"`;
 
+var sql_select1 = `select tags->"$.type" AS Tag1 from classroom`;
 con.connect(function(err,result){
     if(err) throw err;
         console.log(result);
@@ -48,6 +49,11 @@ con.connect(function(err,result){
             con.query(sql_select, function(err,result, fields){
                 
                 console.log(result[0].room_id);
+
+            });
+            con.query(sql_select1, function(err,result, fields){
+                
+                console.log(result[0].Tag1);
 
             });
         }
