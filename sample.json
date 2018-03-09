@@ -1,0 +1,21 @@
+{
+    "courses":[
+        {
+            "name":"mvc",
+            "teacher_id":10
+        },
+        {
+            "name":"angular",
+            "teacher_id":100
+        },
+        {
+            "name":"security",
+            "teacher_id":201
+        },
+        {
+            "name":"OS",
+            "teacher_id":104
+        }
+
+    ]
+}
