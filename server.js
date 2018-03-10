@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
 //Establish MySQL connection
 connection.connect(function(err) {
    if (err) 
-      throw err
+      throw err;
    else {
        console.log('Connected to MySQL');
        // Start the app when connection is ready
